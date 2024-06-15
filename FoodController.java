@@ -25,3 +25,11 @@ public class FoodController {
     public String tosy() {
         return "sy";
     }
+
+    @GetMapping("/foodlist")
+    public String findAll(Model model, @RequestParam(required = false, defaultValue = "1") int pageNum, @RequestParam(required = false, defaultValue = "8") int pageSize) {
+        PageInfo<Food> pageInfo = foodService.findAllFoods(pageNum, pageSize);
+        model.addAttribute("pageInfo", pageInfo);
+        return "foodlist";
+    }
+    
