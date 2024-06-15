@@ -66,5 +66,50 @@ public class FoodController {
         boolean ret = foodService.delfood(name);
         return "redirect:adminfoodlist";
     }
+
+    @GetMapping("/edit")
+    public String toEdit(String name, Model model) {
+        Food food = foodService.findFoodByName(name);
+        System.out.println(food);
+        model.addAttribute("f", food);
+        return "edit";
+    }
+
+    @PostMapping("/edit")
+    public String doEdit(Food food) {
+        boolean ret = foodService.updateFood(food);
+        System.out.println(ret);
+        if (ret) {
+            return "redirect:adminfoodlist";
+        } else {
+            return "edit";
+        }
+    }
+
+    @GetMapping("/editinfo")
+    public String toinfoEdit(String name, Model model) {
+        Food food = foodService.findFoodByName(name);
+        System.out.println(food);
+        model.addAttribute("f", food);
+        return "infoedit";
+    }
+
+    @PostMapping("/editinfo")
+    public String doinfoEdit(Food food) {
+        boolean ret = foodService.updateinfo(food);
+        System.out.println(ret);
+        if (ret) {
+            return "redirect:foodinfolist";
+        } else {
+            return "editinfo";
+        }
+    }
+
+    @GetMapping("/foodinfolist")
+    public String cultureAll(Model model, @RequestParam(required = false, defaultValue = "1") int pageNum, @RequestParam(required = false, defaultValue = "8") int pageSize) {
+        PageInfo<Food> info = foodService.findAllFoods(pageNum, pageSize);
+        model.addAttribute("pageInfo", info);
+        return "foodinfolist";
+    }
 }
     
