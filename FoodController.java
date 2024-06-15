@@ -11,3 +11,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
+
+@Controller
+public class FoodController {
+    public FoodService foodService;
+
+    @Autowired
+    public void setFoodService(FoodService foodService) {
+        this.foodService = foodService;
+    }
+
+    @GetMapping("/sy")
+    public String tosy() {
+        return "sy";
+    }
