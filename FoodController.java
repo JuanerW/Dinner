@@ -32,4 +32,18 @@ public class FoodController {
         model.addAttribute("pageInfo", pageInfo);
         return "foodlist";
     }
+    @GetMapping("/adminfoodlist")
+    public String adminfindAll(Model model, @RequestParam(required = false, defaultValue = "1") int pageNum, @RequestParam(required = false, defaultValue = "8") int pageSize) {
+        PageInfo<Food> a = foodService.findAllFoods(pageNum, pageSize);
+        model.addAttribute("pageInfo", a);
+        return "adminsy";
+    }
+
+    @GetMapping("/find")
+    public String findFoodByName(String name, Model model) {
+        List<Food> food = foodService.vagueFindByName(name);
+        model.addAttribute("food", food);
+        return "findlist";
+    }
+}
     
