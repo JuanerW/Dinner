@@ -45,5 +45,26 @@ public class FoodController {
         model.addAttribute("food", food);
         return "findlist";
     }
+   @GetMapping("add")
+    public String toadd() {
+        return "add";
+    }
+
+    @PostMapping("add")
+    public String add(Food food) {
+        boolean ret = foodService.add(food);
+        if (ret) {
+            return "redirect:adminfoodlist";
+
+        } else {
+            return "add";
+        }
+    }
+
+    @GetMapping("/foodDel")
+    public String del(String name) {
+        boolean ret = foodService.delfood(name);
+        return "redirect:adminfoodlist";
+    }
 }
     
