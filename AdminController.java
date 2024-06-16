@@ -15,3 +15,26 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+
+@Controller
+public class AdminController {
+    public AdminService adminService;
+
+    @Autowired
+    public void setAdminService(AdminService adminService) {
+        this.adminService = adminService;
+    }
+
+
+    @GetMapping("/adminlogin")
+    public String toLoginadmin() {
+        return "adminlogin";
+    }
+
+    @PostMapping("/adminlogin")
+    public String adminlogin(Admin admin, HttpSession session, Model model) {
+        Admin r = adminService.findAdmin(admin);
+        System.out.println(r);
+    }
+
+}
