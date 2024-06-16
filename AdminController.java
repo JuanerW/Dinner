@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
 
+
 @Controller
 public class AdminController {
     public AdminService adminService;
@@ -35,6 +36,18 @@ public class AdminController {
     public String adminlogin(Admin admin, HttpSession session, Model model) {
         Admin r = adminService.findAdmin(admin);
         System.out.println(r);
+        if (r != null) {
+            session.setAttribute("admin", r);
+            return "redirect:adminfoodlist";
+        } else {
+            model.addAttribute("msg","Username or password is incorrect");
+            return "adminlogin";
+        }
+    }
+    @GetMapping("/exitadmin")
+    public String exitadmin(HttpSession session) {
+        session.removeAttribute("admin");
+        return "redirect:login";
     }
 
 }
