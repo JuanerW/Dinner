@@ -37,4 +37,27 @@ public class UserController {
         model.addAttribute("users", users);
         return "usermanagesy";
     }
+
+    @GetMapping("/userDel")
+    public String userDel(String name) {
+        boolean ret = userService.delUserByName(name);
+        return "redirect:UserManageSy";
+    }
+
+    @GetMapping("/userEditByManager")
+    public String userEdit(String username, Model model) {
+        User user = userService.findUserByName(username);
+        model.addAttribute("userE", user);
+        return "useredit";
+    }
+
+    @PostMapping("/userEditByManager")
+    public String doUserEdit(User user) {
+        boolean ret = userService.updateuser(user);
+        if (ret) {
+            return "redirect:UserManageSy";
+        } else {
+            return "useredit";
+        }
+    }
 }
