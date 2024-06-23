@@ -12,6 +12,24 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 @Controller
 public class UserController {
+    public UserService userService;
+
+    @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+
+
+    @GetMapping("/login")
+    public String toLogin() {
+        return "login";
+    }
+
+    @GetMapping("/usersy")
+    public String toUsersy() {
+        return "usersy";
+    }
+    
     @GetMapping("/edituser")
     public String toEdit(String username, Model model) {
         User user = userService.findUserByName(username);
