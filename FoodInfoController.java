@@ -29,4 +29,22 @@ public class FoodInfoController {
         model.addAttribute("food", food);
         return "make";
     }
+
+    @GetMapping("/Collect")
+    public String insertFoodByName(String userName, String foodName, String date, Model model, HttpSession session) {
+        OrderedFood orderedFood = foodinfoService.findCollectInfoByFoodName(foodName);
+        if (orderedFood != null) {
+            model.addAttribute("msg", "This food has been collected！");
+        } else {
+            boolean ret = foodinfoService.insertFoodByName(userName, foodName, date);
+            if (ret) {
+                model.addAttribute("msg", "Successfully collected！");
+            } else {
+                model.addAttribute("msg", "Collection failed！");
+            }
+        }
+        Food food = foodinfoService.findFoodByName(foodName);
+        session.setAttribute("food", food);
+        return "make";
+    }
 }
