@@ -29,6 +29,25 @@ public class UserController {
     public String toUsersy() {
         return "usersy";
     }
+
+    @PostMapping("/login")
+    public String login(User user, HttpSession session, Model model) {
+        User ret = userService.findUser(user);
+        if (ret != null) {
+            session.setAttribute("user", ret);
+            model.addAttribute("msg", "Login successful! Start food surfing!");
+            return "usersy";
+        } else {
+            model.addAttribute("msg", "Username or password is incorrect");
+            return "login";
+        }
+    }
+
+    @GetMapping("/exit")
+    public String exit(HttpSession session) {
+        session.removeAttribute("user");
+        return "redirect:login";
+    }
     
     @GetMapping("/edituser")
     public String toEdit(String username, Model model) {
