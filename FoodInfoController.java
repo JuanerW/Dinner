@@ -47,4 +47,26 @@ public class FoodInfoController {
         session.setAttribute("food", food);
         return "make";
     }
+
+    @GetMapping("/CollectInfo")
+    public String findCollectInfoByName(String name, Model model) {
+        List<OrderedFood> orderedFoods = foodinfoService.findCollectInfoByName(name);
+        model.addAttribute("orderedFoods", orderedFoods);
+        return "collect";
+    }
+
+    @GetMapping("/collectDel")
+    public String del(String food_name, String user_name, Model model) {
+        boolean ret = foodinfoService.delCollect(food_name, user_name);
+        List<OrderedFood> orderedFoods = foodinfoService.findCollectInfoByName(user_name);
+        model.addAttribute("orderedFoods", orderedFoods);
+        return "collect";
+    }
+
+    @GetMapping("/Comment")
+    public String Comment(String name,Model model) {
+        List<Comment> comments=foodinfoService.findAllComments();
+        model.addAttribute("comments",comments);
+        return "comment";
+    }
 }
