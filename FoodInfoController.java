@@ -69,4 +69,33 @@ public class FoodInfoController {
         model.addAttribute("comments",comments);
         return "comment";
     }
+
+    @GetMapping("/insertComment")
+    public String insertComment(String name,String comment,String date,Model model) {
+        boolean ret=foodinfoService.insertComment(name,comment,date);
+        List<Comment> comments=foodinfoService.findAllComments();
+        model.addAttribute("comments",comments);
+        return "comment";
+    }
+
+    @GetMapping("/foodculture")
+    public String findAll(Model model, @RequestParam(required = false, defaultValue = "1") int pageNum, @RequestParam(required = false, defaultValue = "8") int pageSize)
+    {
+       PageInfo<Food> cultureInfo = foodinfoService.findAllinfo(pageNum, pageSize);
+        model.addAttribute("cultureInfo", cultureInfo);
+        return "foodculture";
+    }
+
+    @GetMapping("/CommentManageSy")
+    public String CommentManageSy(Model model) {
+        List<Comment> comments=foodinfoService.findAllComments();
+        model.addAttribute("comments",comments);
+        return "commentmanagesy";
+    }
+
+    @GetMapping("/commentDel")
+    public String CommentManageSy(String comment) {
+        boolean ret=foodinfoService.commentDel(comment);
+        return "redirect:CommentManageSy";
+    }
 }
