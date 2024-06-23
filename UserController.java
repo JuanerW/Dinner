@@ -49,6 +49,23 @@ public class UserController {
         return "redirect:login";
     }
     
+    @GetMapping("/register")
+    public String toRegister() {
+        return "register";
+    }
+
+    @PostMapping("/register")
+    public String toRegister(User user, Model model) {
+        boolean ret = userService.addUser(user);
+        if (ret) {
+            model.addAttribute("msg", "Registration successful! Please log in with your account!");
+            return "sy";
+        } else {
+            model.addAttribute("msg", "registration failed!");
+            return "sy";
+        }
+    }
+    
     @GetMapping("/edituser")
     public String toEdit(String username, Model model) {
         User user = userService.findUserByName(username);
