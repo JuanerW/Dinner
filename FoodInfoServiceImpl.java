@@ -27,4 +27,24 @@ public class FoodInfoServiceImpl implements FoodInfoService {
     public Food findFoodByName(String name) {
         return foodinfoMapper.findfood(name);
     }
+
+     @Override
+    public boolean insertFoodByName(String userName, String foodName, String date) {
+        return foodinfoMapper.insertFoodByName(userName,foodName,date);
+    }
+
+    @Override
+    public List<OrderedFood> findCollectInfoByName(String name) {
+        return foodinfoMapper.findCollectInfoByName(name);
+    }
+
+    @Override
+    public OrderedFood findCollectInfoByFoodName(String foodName) {
+        return foodinfoMapper.findCollectInfoByFoodName(foodName);
+    }
+
+    @Override
+    public boolean delCollect(String food_name, String user_name) {
+        return foodinfoMapper.delcollect(food_name,user_name);
+    }
 }
