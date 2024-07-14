@@ -47,4 +47,9 @@ public class FoodInfoServiceImpl implements FoodInfoService {
     public boolean delCollect(String food_name, String user_name) {
         return foodinfoMapper.delcollect(food_name,user_name);
     }
+
+    @Override
+    public List<Comment> findAllComments() {
+        return foodinfoMapper.findAllComments();
+    }
 }
