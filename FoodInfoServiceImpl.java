@@ -11,3 +11,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
+@Service
+
+public class FoodInfoServiceImpl implements FoodInfoService {
+
+    public FoodInfoMapper foodinfoMapper;
+
+    @Autowired
+    public void setFoodInfoDao(FoodInfoMapper foodinfoMapper) {
+        this.foodinfoMapper = foodinfoMapper;
+    }
+
+    @Override
+    public Food findFoodByName(String name) {
+        return foodinfoMapper.findfood(name);
+    }
+}
