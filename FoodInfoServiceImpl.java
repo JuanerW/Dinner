@@ -57,4 +57,13 @@ public class FoodInfoServiceImpl implements FoodInfoService {
     public boolean insertComment(String name, String comment, String date) {
         return foodinfoMapper.insertComment(name,comment,date);
     }
+
+    @Override
+    public PageInfo<Food> findAllinfo(int pageNum,int pageSize) {
+        PageHelper.offsetPage((pageNum-1)*pageSize+1-1,pageSize);
+        List<Food> l=foodinfoMapper.findAllinfo();
+        PageInfo<Food> pageInfo=new PageInfo<>(l);
+        System.out.println(pageInfo);
+        return pageInfo;
+    }
 }
