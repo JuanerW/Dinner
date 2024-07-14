@@ -52,4 +52,9 @@ public class FoodInfoServiceImpl implements FoodInfoService {
     public List<Comment> findAllComments() {
         return foodinfoMapper.findAllComments();
     }
+
+    @Override
+    public boolean insertComment(String name, String comment, String date) {
+        return foodinfoMapper.insertComment(name,comment,date);
+    }
 }
