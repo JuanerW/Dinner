@@ -66,4 +66,9 @@ public class FoodInfoServiceImpl implements FoodInfoService {
         System.out.println(pageInfo);
         return pageInfo;
     }
+
+    @Override
+    public boolean commentDel(String comment) {
+        return foodinfoMapper.commentDel(comment);
+    }
 }
