@@ -37,3 +37,24 @@ $(".DH .daohang ul li").hover(
         $(".food_d").eq(index).css("display","block");
         $(".food_d").eq(index).siblings().css("display","none");
     });
+    
+    $(".food_material2 .food_up .food_u").mouseout(function(){
+        $(this).toggleClass("food_p1");
+        $(this).find("a").toggleClass("food_p2");
+    });
+
+/************* the food section of a restaurant *************/
+    // $(".cookbook .book2  ul .cook2").hover(function(){//Food Bar Mouse Events
+    //     $(this).find(".cook221").css("display","none");
+    //     $(this).find(".cook222").css("display","block");
+    // },function(){
+    //     $(this).find(".cook222").css("display","none");
+    //     $(this).find(".cook221").css("display","block");
+    // });
+
+    //Food Bar Optimized Slide Animation
+    $(".cookbook .book2  ul .cook2").on("mouseenter", function () {
+        var _this = $(this);
+        _this.find("div.cook221").stop().animate({marginTop: "-60px"}, 400, function () {
+        });
+    });
