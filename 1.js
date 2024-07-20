@@ -88,3 +88,21 @@ $(".DH .daohang ul li").hover(
 });
 
 //onmouseover事件
+function change1(lun,y){
+    lun.index=y;
+    var Time=document.getElementsByClassName("ctime2");
+    var time2=Time[0].getElementsByClassName("time_2");
+    for(var i=0;i<time2.length;i++){
+        time2[i].style.color="black";
+        time2[i].style.borderTop="3px solid black";
+    }
+    lun.style.color="#FF5151";
+    lun.style.borderTop="3px solid #FF5151";
+
+    var CTime=document.getElementsByClassName("ctime1");
+    var time1=CTime[0].getElementsByClassName("time_1");
+    for(var k=0;k<time1.length;k++){
+        time1[k].style.display="none";
+    }
+    time1[lun.index].style.display="block";
+}
