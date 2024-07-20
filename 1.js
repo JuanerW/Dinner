@@ -78,3 +78,13 @@ $(".DH .daohang ul li").hover(
             "text-decoration":"none"
         });
     });
+    /*****鼠标覆盖变红***/
+    $(".BM .bottom .bot_t .bot_t1 li").hover(function(){
+        $(this).css("background-color","#cc3333") ;
+    },function(){
+        $(this).css("background-color","#3B3B3B");
+    });
+
+});
+
+//onmouseover事件
