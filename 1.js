@@ -58,3 +58,23 @@ $(".DH .daohang ul li").hover(
         _this.find("div.cook221").stop().animate({marginTop: "-60px"}, 400, function () {
         });
     });
+    //鼠标离开
+    $(".cookbook .book2  ul .cook2").on("mouseleave", function () {
+        var _this = $(this);
+        _this.find("div.cook221").stop().animate({marginTop: "0px"}, 400, function () {
+        });
+    });
+
+    /***底部链接栏效果****/
+    /*****鼠标覆盖变红***/
+    $(".BM .bottom .bot_s dd a").hover(function(){
+        $(this).css ({
+            "color":"red",
+            "text-decoration":"underline"
+        });
+    },function(){
+        $(this).css({
+            "color":"dimgrey",
+            "text-decoration":"none"
+        });
+    });
