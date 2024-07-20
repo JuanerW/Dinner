@@ -106,3 +106,14 @@ function change1(lun,y){
     }
     time1[lun.index].style.display="block";
 }
+
+var sign=false;//false代表没开夜间模式
+function dakemode() {
+    if(!sign){
+        $("body").css("background-color", "rgba(7,4,0,0.56)")
+        sign=true;
+    }else{
+        $("body").css("background-color","#ffe4c4");
+        sign=false;
+    }
+}
