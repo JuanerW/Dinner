@@ -90,3 +90,29 @@ h4{
     -ms-transform: scale(0.9);
     transform: scale(0.9);
 }
+
+
+.hover-effect:hover .hover-caption {
+    opacity: 1;
+    z-index: 5;
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.hover-effect .hover-caption {
+    background-color: rgba(0,0,0,0.6);
+    color: #222;
+}
+
+.hover-effect .hover-caption, .hover-effect .hover-caption p small {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
