@@ -158,3 +158,9 @@ h4{
 section{
     overflow: hidden;
 }
+
+@media all and (min-width: 1400px) {
+    .container {
+        width: 1400px;
+    }
+}
