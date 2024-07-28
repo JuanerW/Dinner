@@ -132,4 +132,20 @@ $(function () {
         var hour = dt.getHours();//获取时
         var minute = dt.getMinutes();//获取分
         var second = dt.getSeconds();//获取秒
+        date = extra(date);
+        month = extra(month);
+        minute = extra(minute);
+        second = extra(second);
+        document.getElementById("start").innerHTML=year + " 年 " + month + " 月 " + date + " 日 " + hour + "：" + minute + "：" + second + " " + weekday[num];
+        t = setTimeout(time, 1000); //设定定时器，循环运行
 }
+    //补位函数。
+function extra(x) {
+    //如果传入数字小于10，数字前补一位0。
+    if (x < 10) {
+        return "0" + x;
+    } else {
+        return x;
+    }
+}
+
