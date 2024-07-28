@@ -14,4 +14,20 @@
 h4{
     font-family: 'Raleway',serif;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 1.1em;
 }
+
+.vertical-align-bottom {
+    bottom: 0px;
+    position: absolute;
+}
+
+.vertical-align-top {
+    position: absolute;
+    top: 15px;
+}
+/****鏂囧寲鏍�***/
+
+/***鍥鹃噷鐨勫瓧浣�***/
