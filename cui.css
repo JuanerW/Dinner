@@ -28,6 +28,65 @@ h4{
     position: absolute;
     top: 15px;
 }
-/****鏂囧寲鏍�***/
 
-/***鍥鹃噷鐨勫瓧浣�***/
+.item-category-span {
+    clear: left;
+    background-color: #F64747;
+    color: #fff;
+    padding: 1px 7px 0;
+    display: block;
+    float: left;
+    margin: -10px 0 20px;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+
+.hover-effect {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.hover-effect .img-responsive {
+    width: 100%;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    backface-visibility: hidden;
+    width: 352px;
+    height: 352px;
+}
+
+.hover-effect:hover .img-responsive {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    backface-visibility: hidden;
+}
+
+.hover-effect .hover-caption, .hover-effect .hover-overlay {
+    position: absolute;
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    opacity: 0;
+    padding: 0 20px;
+}
+
+.hover-effect .hover-caption {
+    top: 15px;
+    text-align: left;
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
