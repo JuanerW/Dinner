@@ -149,3 +149,26 @@ function extra(x) {
     }
 }
 
+    $(function(){
+    var index = 0;//用来表示显示第几张图片，初始显示第一张图片
+    var length = $(".slider>ul>li").length;//表示列表项的数目
+    $(".arrow-right").click(function(){
+        index++;
+        if(index == length){index=0;}
+        $(".slider>ul>li").eq(index).fadeIn().siblings().fadeOut();
+    });
+    $(".arrow-left").click(function(){
+        index--;
+        if(index == -1){index=length-1;}
+        $(".slider>ul>li").eq(index).fadeIn().siblings().fadeOut();
+    });
+});
+
+
+$(function () {
+    $('.hotSP span').hover(function () {
+        var index = $(this).index();
+        $(this).addClass('isSelect').siblings().removeClass('isSelect');
+        $(this).parent().next().find('.articleContent').hide().eq(index).show();
+    });
+})
