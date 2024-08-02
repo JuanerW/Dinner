@@ -76,3 +76,28 @@ body {
     width: 109px;
     border-radius: 18px
 }
+/***顶部右侧登录***/
+.HD .header .header_deng {
+    float: left;
+    overflow: hidden;
+    width: 33%;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.HD .header .header_deng .deng_2 li {
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: 3px;
+    color: white;
+    margin-right: 3%;
+    border-radius: 20px;
+}
+
+.HD .header .header_deng .deng_2 li a {
+    text-decoration: none;
+}
