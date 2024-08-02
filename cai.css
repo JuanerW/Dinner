@@ -101,3 +101,46 @@ body {
 .HD .header .header_deng .deng_2 li a {
     text-decoration: none;
 }
+
+
+/*——————————————————导航——————————————————*/
+.DH {
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3);
+    height: 76px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2000;
+    margin: 0 auto;
+}
+
+.DH .daohang {
+    height: 76px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.DH .daohang ul {
+    width: 82%;
+    height: 76px;
+    margin-left: 268px;
+}
+
+.DH .daohang ul li {
+    float: left;
+    overflow: hidden;
+    height: 76px;
+    width: 12%;
+    line-height: 76px;
+    cursor: pointer;
+}
+
+.DH .daohang ul li .dh_a {
+    height: 76px;
+    line-height: 76px;
+    margin-bottom: 0px;
+    color: black;
+    text-decoration: none;
+}
