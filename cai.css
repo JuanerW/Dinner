@@ -262,3 +262,276 @@ body {
     width: 100%;
     height: 300px;
 }
+
+
+.CT .content .content_c2 .food_material1 {
+    width: 100%;
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.CT .content .content_c2 .food_material1 p {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.CT .content .content_c2 .food_material1 .more {
+    width: 9%;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+.CT .content .content_c2 .food_material1 .more a {
+    color: #3B3B3B;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.CT .content .content_c2 .food_material2 {
+    width: 100%;
+    height: 200px;
+    float: left;
+    overflow: hidden;
+    background-color: white;
+}
+
+.CT .content .content_c2 .food_material2 .food_up {
+    width: 100%;
+    height: 50px;
+    margin-left: 2%;
+}
+
+.CT .content .content_c2 .food_material2 .food_up .food_u {
+    width: 6%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 200;
+    float: left;
+    overflow: hidden;
+    margin-top: 18px;
+    background-color: white;
+}
+
+.CT .content .content_c2 .food_material2 .food_up .food_u a {
+    text-decoration: none;
+    color: #3B3B3B;
+}
+
+.CT .content .content_c2 .food_material2 .food_up .food_u.food_p1 {
+    background: red;
+}
+
+.CT .content .content_c2 .food_material2 .food_up .food_u a.food_p2 {
+    color: white;
+}
+
+.CT .content .content_c2 .food_material2 .food_down {
+    width: 100%;
+    height: 80px;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+.CT .content .content_c2 .food_material2 .food_down .food_d {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.CT .content .content_c2 .food_material2 .food_down .down1 {
+    width: 11.8%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2px;
+}
+
+.CT .content .content_c2 .food_material2 .food_down .down1 img {
+    width: 100%;;
+    height: 100%;
+}
+
+.CT .content .content_c2 .food_material2 .food_down .down1 ul {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.7);
+    clear: both;
+}
+
+.CT .content .content_c2 .food_material2 .food_down .down1 ul li {
+    padding: 0;
+    width: 60%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 13px;
+    text-align: left;
+}
+
+.CT .content .content_c3 {
+    width: 100%;
+    height: 770px;
+    position: relative;
+}
+
+.CT .content .content_c3 .cookbook {
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+
+.CT .content .content_c3 .cookbook .book1 {
+    width: 100%;
+    height: 120px;
+    display: block;
+    float: left;
+    overflow:auto;
+}
+
+.CT .content .content_c3 .cookbook .book1 .cook1 p {
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    font-size: 24px;
+    font-weight: 400;
+    /* border: solid 1px royalblue;*/
+}
+
+.CT .content .content_c3 .cookbook .book2 {
+    width: 100%;
+    height: 650px;
+    float: left;
+    overflow: visible;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul {
+    width: 100%;
+    height: 100%;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 {
+    width: 22%;
+    height: 300px;
+    float: left;
+    overflow: auto;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook21 {
+    width: 100%;
+    height: 80%;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook21 img {
+    width: 100%;
+    height: 100%;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook221 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    background-color: #f2d0d1c7
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook221 .p1 {
+    text-align: left;
+    margin-left: 10%;
+    height: 33%;
+    line-height: 20px;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook221 .p1 a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook221 .p2 {
+    text-align: left;
+    margin-left: 10%;
+    height: 33%;
+    line-height: 20px;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook221 .p2 a {
+    color: gray;
+    font-size: 12px;
+    word-spacing: 10px;
+    text-decoration: none;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook221 .p3 {
+    text-align: left;
+    margin-left: 10%;
+    height: 33%;
+    line-height: 20px;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook221 .p3 a {
+    color: red;
+    font-size: 12px;
+    word-spacing: 10px;
+    text-decoration: none
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook222 {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    background-color: rgba(96, 96, 96, 0.1);
+    cursor: pointer;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook222 li {
+    width: 100%;
+    height: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook222 li img {
+    float: left;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    margin-left: 5%;
+}
+
+.CT .content .content_c3 .cookbook .book2 ul .cook2 .cook22 .cook222 li a {
+    float: left;
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 3%;
+    color: black;
+    text-decoration: none;
+}
