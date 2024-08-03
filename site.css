@@ -150,3 +150,22 @@
     width: 43%;
 }
 
+
+.deatilNav{
+    border: #89b4cebd solid 5px;
+    border-radius: 12px;
+}
+.deatilNavItem span {
+    margin-right: 30px;
+}
+
+.deatilNavItem span:nth-child(1) {
+    margin-right: 30px;
+}
+
+.articleContent p {
+    font-size: 19px;
+    color: rgb(75, 75, 75);
+    line-height: 32px;
+    font-family: "SimSun", "瀹嬩綋";
+}
