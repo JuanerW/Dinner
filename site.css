@@ -115,3 +115,21 @@
 .introduction {
     margin-bottom: 20px;
 }
+
+.introduction img {
+    margin-right: 10px;
+}
+
+.introductionTit {
+    color: #fe4305;
+    font-size: 30px;
+
+}
+
+.itemTag {
+    font-size: 16px;
+    color: #333;
+    line-height:2.9;
+    font-weight: 1000;
+    letter-spacing: 6px;
+}
