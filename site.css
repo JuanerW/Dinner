@@ -1,0 +1,21 @@
+.hotSP {
+    padding-bottom: 11px;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hotSP a {
+    font-size: 16px;
+    color: #000028;
+    margin-top: 1px;
+}
+
+.hotSP a:hover {
+    color: #fe4305;
+}
+
+.hotSP span {
+    position: relative;
+}
