@@ -38,3 +38,25 @@
     left: 0;
     top: 34px;
 }
+
+.none {
+    display: none;
+}
+
+
+
+.contentBox {
+    margin-top: 2px;
+}
+
+.contentLeft {
+    width: 800px;
+    margin-top: 30px;
+}
+
+.contentRight {
+    width: 360px;
+}
+
+
+ /*鍒嗛〉*/
