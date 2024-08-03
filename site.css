@@ -97,3 +97,21 @@
 
 
  /*鍐呭璇︽儏*/
+.detailTit {
+    width: 233px;
+    height: 34px;
+    background: #fe4305;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 29px;
+}
+
+
+ /*椋熸潗璇︽儏*/
+.introduction {
+    margin-bottom: 20px;
+}
