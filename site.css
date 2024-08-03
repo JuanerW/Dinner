@@ -169,3 +169,25 @@
     line-height: 32px;
     font-family: "SimSun", "瀹嬩綋";
 }
+
+
+.detailArticle {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.detailBigImg {
+    max-width: 100%;
+}
+
+.share {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.articleContent .itemTwo {
+    text-align: center;
+}
