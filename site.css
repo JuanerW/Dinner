@@ -60,3 +60,24 @@
 
 
  /*鍒嗛〉*/
+.page {
+    margin-top: 10px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 0;
+}
+
+.page ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.page ul li:hover {
+    background: #00a1d6;
+    border-color: #00a1d6;
+}
