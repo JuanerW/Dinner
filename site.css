@@ -133,3 +133,20 @@
     font-weight: 1000;
     letter-spacing: 6px;
 }
+
+.itemTag p {
+    margin-top: 20px;
+}
+
+.introductionTop {
+    margin-left: 150px;
+}
+
+.itemTagL {
+    width: 35%;
+}
+
+.itemTagR {
+    width: 43%;
+}
+
