@@ -81,3 +81,19 @@
     background: #00a1d6;
     border-color: #00a1d6;
 }
+
+.page ul li:hover a {
+    color: #fff;
+}
+
+.currentPage {
+    background: #00a1d6;
+    border-color: #00a1d6;
+}
+
+.currentPage a {
+    color: #fff;
+}
+
+
+ /*鍐呭璇︽儏*/
