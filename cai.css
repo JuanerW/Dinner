@@ -714,3 +714,56 @@ body {
     margin-bottom: -1px;
     margin-top: 3px;
 }
+
+.slider img{
+    width: 1520px;
+    height: 610px;
+    border-radius: 90px;
+}
+.slider li {
+    position: absolute;
+    display: none;
+}
+
+.slider li:first-child {
+    display: block;
+}
+
+
+.arrow {
+    display: none;
+}
+
+.slider:hover .arrow {
+    display: block;
+}
+
+.arrow-left,
+.arrow-right {
+    font-family: "SimSun", "宋体";
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
