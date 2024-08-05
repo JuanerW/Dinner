@@ -535,3 +535,62 @@ body {
     color: black;
     text-decoration: none;
 }
+
+.BM {
+    background-color: #3B3B3B;
+    width: 100%;
+    height: 100%;
+}
+
+.BM .bottom {
+    width: 70%;
+    height: 450px;
+    margin-left: 15%;
+}
+
+.BM .bottom .bot_f {
+    width: 100%;
+    height: 190px;
+}
+
+.BM .bottom .bot_f .bot_f1 {
+    float: left;
+    overflow: hidden;
+    width: 40%;
+    height: 190px;
+    cursor: pointer;
+}
+
+.BM .bottom .bot_f .bot_f1 img {
+    width: 500px;
+    height: 436px;
+    margin-top: -130px;
+    margin-left: 5%;
+}
+
+.BM .bottom .bot_f .bot_f2 {
+    float: right;
+    overflow: hidden;
+    height: 190px;
+    width: 60%;
+}
+
+.BM .bottom .bot_f .bot_f2 .bot_fa {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+.BM .bottom .bot_f .bot_f2 ul {
+    width: 92.5%;
+    float: right;
+}
+
+.BM .bottom .bot_f .bot_f2 ul li {
+    float: left;
+    overflow: hidden;
+    margin-left: 6.1%;
+    margin-top: 20px;
+    height: 150px;
+    font-size: 12px;
+    width: 18%;
+}
