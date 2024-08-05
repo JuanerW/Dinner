@@ -655,3 +655,62 @@ body {
     line-height: 30px;
     cursor: pointer;
 }
+
+.BM .bottom .bot_s dd a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+.BM .bottom .bot_t {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    color: dimgrey;
+}
+
+.BM .bottom .bot_t .bot_t1 {
+    width: 80%;
+    height: 40px;
+    margin-left: 11.3%;
+    font-size: 12px;
+}
+
+.BM .bottom .bot_t .bot_t1 li {
+    float: left;
+    overflow: hidden;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 2.7%;
+    cursor: pointer;
+}
+
+.BM .bottom .bot_t .bot_t1 li a {
+    text-decoration: none;
+    color: dimgrey;
+    width: 60px;
+    height: 16px;
+}
+
+.BM .bottom .bot_t .bot_t2 {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-size: 12px;
+}
+
+.BM .bottom .bot_t .bot_t2 a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+/*****轮播图****/
+.slider {
+    height: 608px;
+    width: 100%;
+    margin: 14px auto;
+    position: relative;
+    background-color: #ffe4c4;
+    margin-bottom: -1px;
+    margin-top: 3px;
+}
