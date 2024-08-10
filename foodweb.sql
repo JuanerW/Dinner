@@ -78,3 +78,44 @@ INSERT INTO `tb_food` VALUES ('Steamed Pork Ribs with Mushrooms', 'images/wan/sq
 DROP TABLE IF EXISTS `tb_orderedfood`;
 CREATE TABLE `tb_orderedfood`  (
   `user_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `food_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `date` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tb_orderedfood
+-- ----------------------------
+INSERT INTO `tb_orderedfood` VALUES ('Zhou Jie', 'Shaanxi Pasta', '2024-05-20 14:06:53');
+INSERT INTO `tb_orderedfood` VALUES ('Zhou Jie', 'Wife Cake', '2024-05-20 14:16:52');
+INSERT INTO `tb_orderedfood` VALUES ('Zhou Jie', 'Baked Eggs with Tomatoes', '2024-05-20 19:55:25');
+INSERT INTO `tb_orderedfood` VALUES ('Zhou Jie', 'Zhajiang Noodles 3rd Gen', '2024-05-20 20:55:51');
+INSERT INTO `tb_orderedfood` VALUES ('Xiao Zhang', 'Zhajiang Noodles', '2024-05-20 22:14:37');
+INSERT INTO `tb_orderedfood` VALUES ('Xiao Zhang', 'Zhajiang Noodles 6th Gen', '2024-05-20 22:14:46');
+INSERT INTO `tb_orderedfood` VALUES ('Xiao Zhang', 'Stir-fried Water Spinach', '2024-05-20 22:15:05');
+
+-- ----------------------------
+-- Table structure for tb_user
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_user`;
+CREATE TABLE `tb_user`  (
+                            `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+                            `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+                            `sex` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+                            `age` int(255) NULL DEFAULT NULL,
+                            `weight` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+                            `height` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+                            PRIMARY KEY (`username`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of tb_user
+-- ----------------------------
+INSERT INTO `tb_user` VALUES ('1234', '456', 'Male', 14, '42.5 kg', '160 cm');
+INSERT INTO `tb_user` VALUES ('456', '456', 'Male', 17, '56 kg', '175 cm');
+INSERT INTO `tb_user` VALUES ('aa', 'aa', 'Male', 36, '45 kg', '185 cm');
+INSERT INTO `tb_user` VALUES ('user', '13', 'Male', 0, '7 kg', '173 cm');
+INSERT INTO `tb_user` VALUES ('Zhou Jie', 'zhoujie', 'Male', 21, '54 kg', '174 cm');
+INSERT INTO `tb_user` VALUES ('Xiao Zhang', '123', 'Male', 22, '56 kg', '192 cm');
+INSERT INTO `tb_user` VALUES ('Guo Yunqi', '123', 'Male', 21, '50 kg', '175 cm');
+
+SET FOREIGN_KEY_CHECKS = 1;
