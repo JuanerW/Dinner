@@ -65,3 +65,16 @@ INSERT INTO `tb_food` VALUES ('Minced Pork with Eggplant', 'images/wan/sql/st1.j
 INSERT INTO `tb_food` VALUES ('Homemade Tujia Flavored Pancake', 'images/wan/sql/21.1.jpg', '20 minutes', 'Pancake', 'Average', '16 steps', 'Homemade Tujia Flavored Pancake Description', 'Homemade Tujia Flavored Pancake Recipe');
 INSERT INTO `tb_food` VALUES ('Sesame Crispy Snack', 'images/wan/sql/14.1.jpg', '17 minutes', 'Dessert', 'Average', '10 steps', 'Sesame Crispy Snack Description', 'Sesame Crispy Snack Recipe');
 INSERT INTO `tb_food` VALUES ('Stir-fried Tofu with Bean Paste', 'images/wan/sql/10.3.jpg', '16 minutes', 'Home Cooking', 'Average', '9 steps', 'Stir-fried Tofu with Bean Paste Description', 'Stir-fried Tofu with Bean Paste Recipe');
+INSERT INTO `tb_food` VALUES ('Sweet and Sour Pork with Pineapple', 'images/wan/sql/10.2.jpg', '45 minutes', 'Home Cooking', 'Hot', '14 steps', 'Sweet and Sour Pork with Pineapple Description', 'Sweet and Sour Pork with Pineapple Recipe');
+INSERT INTO `tb_food` VALUES ('Stir-fried Lamb with Scallions', 'images/wan/sql/10.1.jpg', '90 minutes', 'Hot Dish', 'Hot', '15 steps', 'Stir-fried Lamb with Scallions Description', 'Stir-fried Lamb with Scallions Recipe');
+INSERT INTO `tb_food` VALUES ('Crispy Five-Spice Fried Potato Chips', 'images/wan/sql/14.2.jpg', '18 minutes', 'Fried Snack', 'Hot', '6 steps', 'Crispy Five-Spice Fried Potato Chips Description', 'Crispy Five-Spice Fried Potato Chips Recipe');
+INSERT INTO `tb_food` VALUES ('Shaanxi Pasta', 'images/wan/sql/21.3.jpg', '15 minutes', 'Pasta', 'Average', '14 steps', 'Shaanxi Pasta Description', 'Shaanxi Pasta Recipe');
+INSERT INTO `tb_food` VALUES ('Green Pepper and Eggplant Steamed Bun', 'images/wan/sql/4.1.jpg', '10 minutes', 'Home Cooking', 'Average', '4 steps', 'Green Pepper and Eggplant Steamed Bun Description', 'Green Pepper and Eggplant Steamed Bun Recipe');
+INSERT INTO `tb_food` VALUES ('Steamed Pork Ribs with Mushrooms', 'images/wan/sql/16.2.jpg', '11 minutes', 'Home Cooking', 'Average', '12 steps', 'Steamed Pork Ribs with Mushrooms Description', 'Steamed Pork Ribs with Mushrooms Recipe');
+
+-- ----------------------------
+-- Table structure for tb_orderedfood
+-- ----------------------------
+DROP TABLE IF EXISTS `tb_orderedfood`;
+CREATE TABLE `tb_orderedfood`  (
+  `user_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
