@@ -44,3 +44,24 @@ public class DocumentAdapter extends RecyclerView.Adapter<DocumentAdapter.Docume
                mContext.startActivity(intent);
            });
        }
+       @Override
+       public int getItemCount() {
+           return mDocuments.size();
+       }
+
+       static class DocumentViewHolder extends RecyclerView.ViewHolder {
+           TextView textViewTitle;
+
+           public DocumentViewHolder(View itemView) {
+               super(itemView);
+               textViewTitle = itemView.findViewById(R.id.document_title);
+           }
+       }
+
+       public void loadMoreItems(List<Document> newDocuments) {
+           int previousContentSize = mDocuments.size();
+           mDocuments.addAll(newDocuments);
+           notifyItemRangeInserted(previousContentSize, newDocuments.size());
+       }
+   }
+
